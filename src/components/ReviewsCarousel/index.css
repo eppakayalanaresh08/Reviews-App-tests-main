@@ -1,26 +1,28 @@
 .bg-container {
   background-image: url('https://assets.ccbp.in/frontend/react-js/reviews-bg.png');
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.review-Container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  padding: 80px;
-  max-width: 900px;
+  background-size: cover;
 }
 
 .heading-reviews {
   color: #ffffff;
   font-family: 'Roboto';
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 63px;
 }
+
+@media screen and (min-width: 768px) {
+  .heading-reviews {
+    font-size: 48px;
+    margin-top: 150px;
+  }
+}
+
 .on-arrow {
   border: none;
   background-color: transparent;
@@ -29,16 +31,29 @@
 }
 .arrow-container {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  width: 84%;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-container {
+    width: 45%;
+    min-width: 662px;
+  }
+}
+
+.container-profile-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
 }
 
 .review-username {
   color: #ffffff;
   font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: 500;
-  margin-right: 80px;
-  margin-left: 80px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .companyName-review {
